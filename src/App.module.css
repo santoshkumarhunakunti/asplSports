@@ -1,0 +1,43 @@
+.App {
+  text-align: center;
+}
+
+.gameList {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial;
+  padding-top: 2%;
+}
+.mandatory {
+  color: red;
+}
+
+.spacing {
+  display: flex;
+  flex-direction: row;
+  padding-right: 6px;
+}
+
+.submitSpacing {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-right: 2%;
+}
+.App-header {
+  background-color: #1574ad;
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(20px + 4vmin);
+  color: white;
+}
+
+.tanner-is-awesome {
+  z-index: 5;
+}
