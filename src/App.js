@@ -19,6 +19,8 @@ class App extends Component {
                 {id: 2, Game: 'Carrom', Floor: [3, 6, 7]},
                 {id: 3, Game: 'Table Tennis', Floor: [6,7]}
             ],
+            Board:[{id:1, Board:'Board-A'},
+                   {id:2, Board:'Board-B'}],
 
             Slot:[
                 {id:1, Gameslot:'7:00 to 7:30'},
@@ -53,7 +55,7 @@ class App extends Component {
         <GameSlot/>
 
 
-          
+
         <div className={styles.gameList}>
           <p className={styles.spacing}>
             Number of Players<b className={styles.mandatory}>*</b>:

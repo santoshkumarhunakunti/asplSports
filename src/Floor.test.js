@@ -1,17 +1,22 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import Floor from "./Floor";
+import Game from "./Game";
 import { shallow } from "enzyme";
 
 describe("Testing Floor.test.js", () => {
 
-    it("Should receive selected floor as prop", () => {
+    it("Should render an option for each floor in props.floors", () => {
         //arrange
-        const appWrapper = shallow(<Floor floors={[3, 6, 7]}/>);
+        const floors = ["Mamatha", "Santosh", "Tanner"]
+        const appWrapper = shallow(<Floor floors={floors} placeholder={"Poopy"} />);
+        const options = appWrapper.find('option').filterWhere(option => option.props().hidden !== true);
 
         // act
 
         //assert
-        expect(appWrapper.instance().props.floors).toEqual([3, 6, 7]);
+        expect(options).toHaveLength(floors.length);
     });
+
+
 });

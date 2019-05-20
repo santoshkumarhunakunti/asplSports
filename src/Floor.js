@@ -16,7 +16,7 @@ class Floor extends Component{
         //let floor = [3, 6, 7];
 
         let options = this.props.floors.map((element)=><option>{element}</option>)
-            //[<option>3</option>, <option>6</option>, <option>7</option>]
+        //[<option>3</option>, <option>6</option>, <option>7</option>]
 
         return (
             <div className={styles.gameList}>
@@ -24,8 +24,8 @@ class Floor extends Component{
                     Floor<b className={styles.mandatory}>*</b>:
                 </label>
                 <select id="selectid" value={this.state.selectedFloor} onChange={this.handleSelectedFloors}>
-                    <option value="" hidden>Select floor</option>
-                    {options.map((element)=>element)}
+                    <option value="" disabled hidden>{this.props.placeholder}</option>
+                    {options}
                 </select>
             </div>
         );

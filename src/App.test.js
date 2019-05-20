@@ -48,3 +48,16 @@ it("Should show the Game slots",()=>{
     //assert
     expect(appWrapper.find("GameSlot")).toHaveLength(1);
 });
+
+// it("Should display Board-A and Board-B dropdown when selected carrom and 7th floor as prop", () => {
+//     //arrange
+//     const appWrapper = shallow(<Floor floors={[7]}/>);
+//     const gameWrapper = shallow(<Game selectedGame={"Carrom"}/>);
+//
+//     // act
+//
+//     //assert
+//     expect(appWrapper.instance().props.floors).toEqual([7]) &&
+//     expect(gameWrapper.instance().props.selectedGame).toEqual("Carrom");
+//
+// });
