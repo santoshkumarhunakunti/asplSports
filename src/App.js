@@ -52,6 +52,8 @@ class App extends Component {
         <SelectDate/>
         <GameSlot/>
 
+
+          
         <div className={styles.gameList}>
           <p className={styles.spacing}>
             Number of Players<b className={styles.mandatory}>*</b>:

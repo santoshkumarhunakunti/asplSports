@@ -20,9 +20,9 @@ render()
                     Game<b className={styles.mandatory}>*</b>:
                 </label>
                 <select id="selectid" value={this.props.selectedGame} onChange={this.props.onGameChange}>
-                    <option>Select game</option>
-                    <option>Carrom</option>
-                    <option>Table Tennis</option>
+                    <option value="" hidden>Select game</option>
+                    <option value="Carrom">Carrom</option>
+                    <option value="Table Tennis">Table Tennis</option>
                 </select>
             </div>
         );

@@ -24,7 +24,7 @@ class Floor extends Component{
                     Floor<b className={styles.mandatory}>*</b>:
                 </label>
                 <select id="selectid" value={this.state.selectedFloor} onChange={this.handleSelectedFloors}>
-                    <option>Select floor</option>
+                    <option value="" hidden>Select floor</option>
                     {options.map((element)=>element)}
                 </select>
             </div>

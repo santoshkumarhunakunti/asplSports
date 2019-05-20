@@ -8,7 +8,8 @@
     "react-datetime": "^2.16.3",
     "react-dom": "^16.8.6",
     "react-dropdown-timepicker": "^1.0.4",
-    "react-scripts": "3.0.0"
+    "react-scripts": "3.0.0",
+    "sinon": "^7.3.2"
   },
   "scripts": {
     "start": "react-scripts start",
